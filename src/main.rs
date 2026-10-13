@@ -12,7 +12,7 @@ fn main() -> std::io::Result<()> {
     // Smarter encoding
 
     // Creating file and moving ownership to the BufWriter obj output
-    let file = File::create("gradient.ppm")?;
+    let file = File::create("outdir/gradient.ppm")?;
     let mut output = BufWriter::new(file);
 
     // header
